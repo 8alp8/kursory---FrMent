@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color:#f5d04e;
+  font-family: "Figtree", sans-serif;
+}
+
+.card{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px 5px;
+    width: 100%;
+    max-width: 382px;
+    height: 520px;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 8px 8px 0px 0px black;
+}
+
+
+.tab{
+    padding: 20px;
+}
+
+#course-illustration{
+    display: block;
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+
+}
+
+.status{
+    background-color: #f5d04e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    width: 82px;
+    height: 30px; 
+    border-radius: 5px;
+    margin-top: 23px;
+    color: black;
+}
+
+.date{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 26px;}
+
+h1:hover{
+    color: #bfa000;
+    cursor: pointer;
+}
+
+.course-description{
+    font-size: 16px;
+    height: 60px;
+    line-height: 1.3;
+}
+
+.creator{
+    margin-bottom: 23px;
+    display: flex;
+    font-weight: 800;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+#avatar{
+    height: 32px;
+    width: 32px;
+}
+
+/* ✅ Responsiveness*/
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    box-shadow: 3px 3px 0px 0px black;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .course-description,
+  .date,
+  .creator {
+    font-size: 13px;
+  }
+
+  .status {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}
